@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="theme-color" content="#dcecff" />
+  <meta name="description" content="A little comfort corner made just for Nadya Amalia." />
+
+  <title>A Little Hug for Nadya 💙</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="sky-decor" aria-hidden="true">
+    <span class="sparkle sparkle-one">✦</span>
+    <span class="sparkle sparkle-two">✧</span>
+    <span class="sparkle sparkle-three">✦</span>
+    <span class="cloud cloud-one"></span>
+    <span class="cloud cloud-two"></span>
+  </div>
+
+  <main class="page">
+    <header class="top-note">
+      <span class="tiny-heart">♡</span>
+      A LITTLE CORNER JUST FOR YOU
+      <span class="tiny-heart">♡</span>
+    </header>
+
+    <section class="card">
+      <div class="sticker">OHANA MEANS FAMILY</div>
+
+      <div class="hero">
+        <!-- Simpan gambar Stitch sebagai stitch.png di folder yang sama -->
+        <img
+          class="stitch-img"
+          src="stitch.jpg"
+          alt="Stitch, teman kecil yang menemani Nadya"
+        />
+      </div>
+
+      <p class="eyebrow">a tiny reminder for today</p>
+
+      <h1>Hi, Nadya</h1>
+
+      <p class="intro">
+        Hari pertama memang kadang nggak bersahabat, ya?
+        Jadi, hari ini kamu nggak harus melakukan semuanya.
+        Pelan-pelan aja, sayang.
+      </p>
+
+      <div class="day-tag">
+        <span class="status-dot"></span>
+        PMS DAY ONE · SOFT MODE ON
+      </div>
+
+      <div class="divider">
+        <span>✦</span>
+        <span>♡</span>
+        <span>✦</span>
+      </div>
+
+      <section class="comfort-section">
+        <h2>Tell Stitch, how are you? 🩵</h2>
+        <p class="section-desc">
+          Pilih yang paling menggambarkan perasaanmu sekarang.
+        </p>
+
+        <div class="mood-grid" id="moodGrid">
+          <button class="mood-option active" data-mood="kram"
+            aria-pressed="true">
+            <span>🥺</span>
+            <small>Lagi kram</small>
+          </button>
+
+          <button class="mood-option" data-mood="capek"
+            aria-pressed="false">
+            <span>😴</span>
+            <small>Capek banget</small>
+          </button>
+
+          <button class="mood-option" data-mood="sensitif"
+            aria-pressed="false">
+            <span>🥹</span>
+            <small>Sensitif</small>
+          </button>
+
+          <button class="mood-option" data-mood="manja"
+            aria-pressed="false">
+            <span>🫂</span>
+            <small>Pengen dimanja</small>
+          </button>
+        </div>
+
+        <button class="main-button" id="comfortBtn">
+          Kasih aku sedikit comfort 💙
+        </button>
+
+        <div class="message-box" id="messageBox" aria-live="polite">
+          <span class="quote-mark">“</span>
+          <p id="comfortMessage">
+            Kalau hari ini perutmu sakit, istirahat dulu ya.
+            Kamu nggak harus menahan semuanya sendirian.
+          </p>
+          <span class="message-signature">— Stitch's little note ♡</span>
+        </div>
+      </section>
+
+      <section class="little-care">
+        <h2>Little things for you</h2>
+        <p class="section-desc">
+          Nggak harus semuanya. Pilih yang kamu butuhkan aja.
+        </p>
+
+        <label class="care-item">
+          <input type="checkbox" />
+          <span class="checkmark">♡</span>
+          <span>Minum air hangat dulu</span>
+        </label>
+
+        <label class="care-item">
+          <input type="checkbox" />
+          <span class="checkmark">♡</span>
+          <span>Kompres hangat kalau perut terasa kram</span>
+        </label>
+
+        <label class="care-item">
+          <input type="checkbox" />
+          <span class="checkmark">♡</span>
+          <span>Rebahan tanpa merasa bersalah</span>
+        </label>
+
+        <label class="care-item">
+          <input type="checkbox" />
+          <span class="checkmark">♡</span>
+          <span>Minta peluk kalau memang mau</span>
+        </label>
+      </section>
+
+      <section class="music-card">
+        <div class="music-icon">♫</div>
+        <div class="music-info">
+          <strong>Laskar Pelangi Music</strong>
+          <span>Putar kalau kamu mau, ya.</span>
+        </div>
+        <button id="musicBtn" class="music-button" type="button"
+          aria-label="Putar musik" aria-pressed="false">
+          ▶
+        </button>
+      </section>
+
+      <audio id="bgMusic" loop preload="none">
+        <source src="music.mp3" type="audio/mpeg" />
+      </audio>
+
+      <footer>
+        <div class="footer-heart">♡</div>
+        <p>Hari ini boleh pelan-pelan, Nad.</p>
+        <span>made with a little love, just for you.</span>
+      </footer>
+    </section>
+
+    <p class="bottom-note">a soft little corner on the internet ☁</p>
+  </main>
+</body>
+</html>
